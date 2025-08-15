@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, jsonify, abort
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -28,4 +28,4 @@ def redirecionamento():
 
 @app.route('/abortar')
 def rota_abortada():
-    abort(403)
+    abort(403)  
